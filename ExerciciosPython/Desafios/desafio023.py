@@ -1,0 +1,16 @@
+numero=input("Digite um número: ")
+numero=numero.strip()
+print('Unidade: {} ' .format(numero[3]))
+print('Dezena: {} ' .format(numero[2]))
+print('Centena: {} ' .format(numero[1]))
+print('Milhar: {} ' .format(numero[0]))
+
+numero=int(input("Digite um número: "))
+milhar=numero//1000
+centena=numero//100 - (milhar*10)
+dezena=(numero//10) - (centena*10) - (milhar*100)
+unidade=(numero//1) - (dezena*10) - (centena*100) - (milhar*1000)
+print('Unidade: {} ' .format(unidade))
+print('Dezena: {} ' .format(dezena))
+print('Centena: {} ' .format(centena))
+print('Milhar: {} ' .format(milhar))
